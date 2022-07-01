@@ -75,7 +75,6 @@ async function run(req, res) {
     });
     app.get("/itemcount", async (req, res) => {
       // const query = {};
-      // const cursor = itemCollection.find(query);
       const count = await billingCollection.estimatedDocumentCount();
       res.send({ count });
     });

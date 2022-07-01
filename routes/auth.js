@@ -8,7 +8,7 @@ require("dotenv").config();
 
 // Sign up
 router.post(
-  "/signup",
+  "/registration",
   [
     check("email", "Invalid email").isEmail(),
     check("password", "Password must be at least 6 chars long").isLength({
